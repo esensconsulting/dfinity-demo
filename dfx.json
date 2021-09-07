@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "twitchdemo": {
+      "main": "src/twitchdemo/main.mo",
+      "type": "motoko"
+    },
+    "twitchdemo_assets": {
+      "dependencies": [
+        "twitchdemo"
+      ],
+      "frontend": {
+        "entrypoint": "src/twitchdemo_assets/src/index.html"
+      },
+      "source": [
+        "src/twitchdemo_assets/assets",
+        "dist/twitchdemo_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.0",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
