@@ -8,6 +8,7 @@ actor {
     type Entry = {
         desc: Text;
         phone: Phone;
+        image: ?Text;
     };
 
     let phonebook = Map.HashMap<Name, Entry>(0, Text.equal, Text.hash);

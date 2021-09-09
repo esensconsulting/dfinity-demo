@@ -3,6 +3,7 @@ type Name = text;
 type Entry = 
  record {
    desc: text;
+   image: opt text;
    phone: Phone;
  };
 service : {
