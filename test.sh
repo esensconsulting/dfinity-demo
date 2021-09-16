@@ -1,0 +1,1 @@
+dfx canister call twitchdemo greet '("all")'
