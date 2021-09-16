@@ -1,5 +1,9 @@
 import type { Principal } from '@dfinity/principal';
-export interface Entry { 'desc' : string, 'phone' : Phone }
+export interface Entry {
+  'desc' : string,
+  'image' : [] | [string],
+  'phone' : Phone,
+}
 export type Name = string;
 export type Phone = string;
 export interface _SERVICE {

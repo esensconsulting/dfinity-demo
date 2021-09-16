@@ -1,7 +1,11 @@
 export const idlFactory = ({ IDL }) => {
   const Name = IDL.Text;
   const Phone = IDL.Text;
-  const Entry = IDL.Record({ 'desc' : IDL.Text, 'phone' : Phone });
+  const Entry = IDL.Record({
+    'desc' : IDL.Text,
+    'image' : IDL.Opt(IDL.Text),
+    'phone' : Phone,
+  });
   return IDL.Service({
     'greet' : IDL.Func([IDL.Text], [IDL.Text], []),
     'insert' : IDL.Func([Name, Entry], [], []),
